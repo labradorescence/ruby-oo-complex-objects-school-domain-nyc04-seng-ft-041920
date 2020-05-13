@@ -9,8 +9,8 @@ class School
 
   end
 
-  def add_student(student_name, grade_or_class)
-    @roster[:grade_or_class] = [student_name]
+  def add_student(student_name, grade)
+    @roster[:grade] = [student_name]
   end
 
 end
