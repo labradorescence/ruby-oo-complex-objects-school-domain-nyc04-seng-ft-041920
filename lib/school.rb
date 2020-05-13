@@ -22,8 +22,8 @@ class School
     end
   end
 
-  def sort
-    @roster
-  end
+  # def sort
+  #   @roster
+  # end
 
 end
