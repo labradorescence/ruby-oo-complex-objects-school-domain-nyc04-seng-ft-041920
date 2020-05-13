@@ -1,4 +1,5 @@
 # code here!
+#6:49pm
 class School
   attr_accessor :school_name, :roster
 
@@ -13,4 +14,7 @@ class School
     @roster[:grade] = [student_name]
   end
 
+  def grade
+    @roster[:grade]
+  end
 end
