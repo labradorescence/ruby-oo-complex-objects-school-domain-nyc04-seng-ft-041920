@@ -10,13 +10,13 @@ class School
 
   end
 
-  def add_student(student_name, class)
-    @roster[class] || = [student_name]
+  def add_student(student_name, class_level)
+    @roster[class_level] || = [student_name]
   end
 
-  def grade(class)
+  def grade(class_level)
     roster.detect do |roster_class, roster_student|
-      if roster_class == class
+      if roster_class == class_level
         return roster_student
       end
     end
