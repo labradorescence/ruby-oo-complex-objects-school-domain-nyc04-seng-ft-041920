@@ -10,7 +10,7 @@ class School
   end
 
   def add_student(student_name, grade_or_class)
-    roster[:grade_or_class] = [student_name]
+    @roster[:grade_or_class] = [student_name]
   end
 
 end
