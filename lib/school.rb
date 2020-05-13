@@ -17,4 +17,9 @@ class School
   def grade
     @roster[:grade]
   end
+
+  def sort
+    @roster
+  end
+
 end
