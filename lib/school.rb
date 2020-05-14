@@ -185,13 +185,13 @@
 
     def initialize(new_school)
       @school_name = new_school
-      @roster = {} 
+      @roster = {}
     end
 
     def add_student(kid, level)
       if roster[level] == nil
         roster[level] = [] #add empty arr if key is empty
-      else 
+      else
         roster[level] << kid
       end
     end
@@ -211,7 +211,6 @@
       end
       sorted
     end
-    
+
 
   end
-  
