@@ -207,7 +207,7 @@
     def sort
       sorted = {}
       roster.each do |r_level, r_kid|
-        sorted[r_level] = r_kid
+        sorted[r_level] = r_kid.sort
       end
       sorted
     end
