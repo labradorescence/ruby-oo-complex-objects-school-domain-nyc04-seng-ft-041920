@@ -179,3 +179,39 @@
 #   8=>["Kev", "Leonora"],
 #   4=>["Hyojin"],
 #   7=>["Time"]}
+
+  class School
+    attr_accessor :school_name, :roster
+
+    def initialize(new_school)
+      @school_name = new_school
+      @roster = {} 
+    end
+
+    def add_student(kid, level)
+      if roster[level] == nil
+        roster[level] = [] #add empty arr if key is empty
+      else 
+        roster[level] << kid
+      end
+    end
+
+    def grade(level)
+      roster.detect do |r_level, r_kid|
+        if level == r_level
+          return r_kid
+        end
+      end
+    end
+
+    def sort
+      sorted = {}
+      roster.each do |r_level, r_kid|
+        sorted[r_level] = r_kid
+      end
+      sorted
+    end
+    
+
+  end
+  
