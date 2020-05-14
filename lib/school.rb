@@ -192,7 +192,7 @@
       roster[level] ||= [] #add empty arr if key is empty
       roster[level] << kid
       end
-    end
+    
 
     def grade(level)
       roster.detect do |r_level, r_kid|
