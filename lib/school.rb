@@ -189,7 +189,7 @@
     end
 
     def add_student(kid, level)
-      if roster[level] = nil
+      if roster[level] = nil || false
         roster[level] = [] #add empty arr if key is empty
       elsif
         roster[level] << kid
