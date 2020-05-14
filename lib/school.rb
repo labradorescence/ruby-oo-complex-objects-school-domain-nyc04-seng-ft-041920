@@ -2,7 +2,7 @@
 #learned newly
 #.detect
 #||=
-#.sort 
+#.sort
 # instance initialization
 
 
@@ -10,17 +10,17 @@
 #6:49pm
 # class School
 #   attr_accessor :school_name, :roster
-# 
+#
 #   def initialize(school_name)
 #     @school_name = school_name
 #     @roster = {}
 #   end
-# 
+#
 #   def add_student(student_name, class_level)
 #     roster[class_level] ||= []
 #     roster[class_level] << student_name
 #   end
-# 
+#
 #   def grade(class_level)
 #     roster.detect do |roster_class, roster_student|
 #       if roster_class == class_level
@@ -28,9 +28,9 @@
 #       end
 #     end
 #   end
-# 
-#   
-#     #this sort organizes the element in alphabetical order. It's not organizing by grade. 
+#
+#
+#     #this sort organizes the element in alphabetical order. It's not organizing by grade.
 #    def sort
 #      sorted_hash = {}
 #      roster.each do |roster_class, roster_student|
@@ -62,7 +62,7 @@
 #     end
 #   end
 
-#   #this sort organizes the element in alphabetical order. It's not organizing by grade. 
+#   #this sort organizes the element in alphabetical order. It's not organizing by grade.
 #    def sort
 #      sorted_hash = {}
 #      roster.each do |roster_class, roster_student|
@@ -90,12 +90,12 @@
 
 #   def add_student(student, level)
 #     roster[level] ||= [] ##wtf was this? it's double pipe equal sign, that allows create [] if roster[level] is nil. So basically, if there's no previous student at that level, create the level.
-#     roster[level] << student #then add this student to that level. 
+#     roster[level] << student #then add this student to that level.
 #   end
 
 #   def grade(level)
-#     roster.detect do |r_level, r_student|  ## what is .detecet method?  it's an interation block parameter method. If detecting the first condition returns the first true.    
-#       if r_level == level 
+#     roster.detect do |r_level, r_student|  ## what is .detecet method?  it's an interation block parameter method. If detecting the first condition returns the first true.
+#       if r_level == level
 #       return r_student
 #       end
 #     end
@@ -104,8 +104,8 @@
 #   #just sorting names alphabetically.
 #   def sort
 #     sorted_hash = {}
-#       roster.each do |r_level, r_student| #get the roster data. 
-#         sorted_hash[r_level] = r_student.sort #put that roster data into the empty hash to sort it out. 
+#       roster.each do |r_level, r_student| #get the roster data.
+#         sorted_hash[r_level] = r_student.sort #put that roster data into the empty hash to sort it out.
 #       end
 #       sorted_hash #return the sorted hash
 #     end
@@ -114,31 +114,31 @@
 
 #5/13/2020
 
-#8:20pm - 8:32 re-code to memorize, cemented the idea now hand write it before going to sleep 
-# 
+#8:20pm - 8:32 re-code to memorize, cemented the idea now hand write it before going to sleep
+#
 # class School
-# 
+#
 #   attr_accessor :school_name, :roster
-# 
+#
 #   def initialize(school_name)
 #     @school_name = school_name
 #     @roster = {}
 #   end
-# 
+#
 #   def add_student(kid, level)
-#     roster[level] ||= [] ##yess use that double pipe equal! 
-#     roster[level] << kid 
+#     roster[level] ||= [] ##yess use that double pipe equal!
+#     roster[level] << kid
 #   end
-# 
+#
 #   def grade(level)
 #     roster.detect do |r_level, r_kids|
 #       if r_level == level
 #       return r_kids
 #       end
-#     end 
-#         
+#     end
+#
 #   end
-# 
+#
 #   def sort
 #     sorted_hash = {}
 #     roster.each do |r_level, r_kids|
@@ -146,13 +146,13 @@
 #     end
 #     sorted_hash
 #   end
-# 
+#
 # end
 
-# 
+#
 # school = School.new("Bayside High")
 # school.roster
-# 
+#
 # school.add_student("Dina", 6)
 # school.add_student("Leonora", 8)
 # school.add_student("Hyojin", 4)
@@ -160,13 +160,13 @@
 # school.add_student("Time", 7)
 # school.add_student("Kev", 8)
 
-#test below separately 
+#test below separately
 
 #puts "school.roster::: #{school.roster}"
 # school.roster::: {
-#   6=>["Dina", "Hannah"], 
-#   8=>["Leonora", "Kev"], 
-#   4=>["Hyojin"], 
+#   6=>["Dina", "Hannah"],
+#   8=>["Leonora", "Kev"],
+#   4=>["Hyojin"],
 #   7=>["Time"]
 # }
 
@@ -175,8 +175,7 @@
 
 #puts "school.sort::: #{school.sort}"
 # school.sort::: {
-#   6=>["Dina", "Hannah"], 
-#   8=>["Kev", "Leonora"], 
-#   4=>["Hyojin"], 
+#   6=>["Dina", "Hannah"],
+#   8=>["Kev", "Leonora"],
+#   4=>["Hyojin"],
 #   7=>["Time"]}
-
